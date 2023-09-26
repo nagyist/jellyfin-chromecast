@@ -243,6 +243,12 @@ body {
     margin-left: 5%;
 }
 
+.waitingContent .info {
+    display: block;
+    font-size: .4em;
+    color: #ccc;
+}
+
 /* Container for backdrop description */
 .waitingDescription {
     position: fixed;

@@ -293,6 +293,8 @@ export function processMessage(data: any): void {
         data.receiverName
     );
 
+    document.querySelector('#waiting-state')!.textContent = data.serverAddress;
+
     if (data.subtitleAppearance) {
         window.subtitleAppearance = data.subtitleAppearance;
     }
@@ -329,6 +331,8 @@ export function processMessage(data: any): void {
         setTimeout(report, 500);
     }
 }
+
+(window as any).processMessage = processMessage;
 
 /**
  * @param name
